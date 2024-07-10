@@ -8,6 +8,7 @@ let myChart = null
 convertir.addEventListener('click',async()=>{
 const cantidad = parseFloat(peso.value)
 const moneda = selectMoneda.value
+
 if(isNaN(cantidad)||cantidad <= 0)
     {
         alert('ERROR---! Para consultar deves ingresar un monto valido...!')    
@@ -78,14 +79,13 @@ try {
             myChart = new Chart(chartContainer, config);
         } else {}
 
-           
         }
 
         renderGrafica();
 
        
     } catch(e) {
-         const errorSpan = document.getElementById("errorSpan")
+        const errorSpan = document.getElementById("errorSpan")
         errorSpan.innerHTML = `"Tenemos un Problema :(!!" Error:${e.message}`
     }
 
