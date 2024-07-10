@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+}
+
+#monedas{
+    width: 80%;
+    height: 2rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    width: 30%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contenedorPrincipal button{
+    width: 80%;
+    height: 3rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background-color: chocolate;
+    color: white;
+    border-radius: 5px;
+}
+
+.contenedorPrincipal input{
+    width: 80%;
+    height: 2.5rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.grafica {
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 60%;
+    justify-content: center;
+}

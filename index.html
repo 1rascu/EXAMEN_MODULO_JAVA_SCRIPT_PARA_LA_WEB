@@ -18,30 +18,28 @@
 
     <h1>Conversor De Monedas</h1>
 
-    <div class="container">
+    <div class="contenedorPrincipal">
        
-      <h2>Pesos (CLP)</h2>
-      <input type="text" id="ingreso" placeholder="Ingrese un monto en CLP" />
-      <br/>
-      <p class="fw-bold">Moneda a Convertir :</p>
+        <h2>Pesos (CLP)</h2>
+        <input type="text" id="ingreso" placeholder="Ingrese un monto en CLP" /><br/>
+        <p class="fw-bold">Moneda a Convertir :</p>
 
-      <select name="opciones" id="monedas">
-        <option value="" disabled selected>Seleccione Tipo de Moneda</option>
-        <option value="dolar" id="dolar">Dolar (USD)</option>
-        <option value="euro" id="euro">Euro (EUR)</option>
-      </select>
 
-      <button class="fw-bold" id="buscar">Buscar</button>
-      <br />
-      <div class="resultado">
-        <p></p>--
-      </div>
+
+        <select name="opciones" id="monedas">
+            <option value="" disabled selected>Seleccione Tipo de Moneda</option>
+            <option value="dolar" id="dolar">Dolar (USD)</option>
+            <option value="euro" id="euro">Euro (EUR)</option>
+        </select>
+
+        <button class="fw-bold" id="buscar">Buscar</button><br/>
+        <div class="resultado"><p></p>--</div>
       
-      
-    
+
     </div>
 
-    <div class="graficas">
+
+    <div class="grafica">
         <canvas id="myChart"></canvas>
         <span id="errorSpan"></span>
     </div>
