@@ -8,11 +8,13 @@ let myChart = null
 convertir.addEventListener('click',async()=>{
 const cantidad = parseFloat(peso.value)
 const moneda = selectMoneda.value
-if(isNaN(cantidad)||cantidad <= 0){
-   alert('Para consultar deves ingresar un monto valido...!')    
-}else if(moneda != 'dolar' & moneda != 'euro'){
-    alert('error ingrese una divisa')
-} 
+if(isNaN(cantidad)||cantidad <= 0)
+    {
+        alert('ERROR---! Para consultar deves ingresar un monto valido...!')    
+    }else if(moneda != 'dolar' & moneda != 'euro')
+    {
+        alert('ERROR--!  ingrese un tipo de moneda para cambiar')
+    } 
 
 try {
     const respuesta = await fetch(apiURL);
@@ -50,7 +52,7 @@ try {
         const datasets = [
             {
              label:"variacion",
-             borderColor: "red", 
+             borderColor: "blue", 
              data: data, 
             }
             ];
@@ -84,7 +86,7 @@ try {
        
     } catch(e) {
          const errorSpan = document.getElementById("errorSpan")
-        errorSpan.innerHTML = `"Algo salió mal :(!!" Error:${e.message}`
+        errorSpan.innerHTML = `"Tenemos un Problema :(!!" Error:${e.message}`
     }
 
 })
